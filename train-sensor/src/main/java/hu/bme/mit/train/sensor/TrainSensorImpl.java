@@ -10,7 +10,7 @@ public class TrainSensorImpl implements TrainSensor {
 	private TrainUser user;
 	private int speedLimit = 5;
 	private int mph = 0;
-
+  
 	public TrainSensorImpl(TrainController controller, TrainUser user) {
 		this.controller = controller;
 		this.user = user;
@@ -30,6 +30,15 @@ public class TrainSensorImpl implements TrainSensor {
 	
 	public int getMph() {
 	       return mph;
+	}
+
+	/*
+	* @acces public
+	* @desc get int mph
+	* */
+	public int getMph(){
+		System.out.println("This is the speed in mph: " + mph);
+		return mph;
 	}
 
 }
