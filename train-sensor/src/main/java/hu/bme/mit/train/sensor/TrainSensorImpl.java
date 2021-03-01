@@ -9,7 +9,7 @@ public class TrainSensorImpl implements TrainSensor {
 	private TrainController controller;
 	private TrainUser user;
 	private int speedLimit = 5;
-	private int mph; 
+	private int mph = 0;
 
 	public TrainSensorImpl(TrainController controller, TrainUser user) {
 		this.controller = controller;
@@ -29,7 +29,7 @@ public class TrainSensorImpl implements TrainSensor {
 	
 	
 	public void getMph() {
-	       return this.mph;
+	       return mph;
 	}
 
 }
