@@ -28,7 +28,7 @@ public class TrainSensorImpl implements TrainSensor {
 	}
 	
 	
-	public void getMph() {
+	public int getMph() {
 	       return mph;
 	}
 
